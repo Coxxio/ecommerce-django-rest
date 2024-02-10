@@ -31,8 +31,28 @@ poetry install
 ```
 
 ### Create the database
+- Instalar MongoDB
+- Crear su usuario
 
 ### Configure the .env file
+
+copiar el archivo .env.example como .env en la ruta raiz del sistema y configurar las siguiente variables.
+
+```bash
+DB_NAME=
+DB_TEST=
+DB_USER=
+DB_PASSWORD=
+DB_HOST=localhost
+DB_PORT=27017
+
+JWT=5
+JWT_REFRESH=30
+
+DJANGO_SETTINGS_MODULE=src.settings.dev
+SECRET_KEY=django-insecure-_l67gkupnfr_79_tmq&wro_s*o0kyzrhh%g+^vv@
+```
+
 
 ### Getting started
 ```bash
@@ -44,6 +64,8 @@ poetry run manage.py migrate
 ```bash
 poetry run manage.py createsuperuser
 ```
+### Initializing project
+
 ```bash
 poetry run manage.py runserver
 ```
