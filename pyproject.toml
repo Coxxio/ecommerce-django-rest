@@ -2,7 +2,7 @@
 name = "ecommerce"
 version = "0.1.0"
 description = ""
-authors = ["antoniocortez1497@gmail.com"]
+authors = ["Antonio Cortez <antoniocortez1497@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
