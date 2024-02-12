@@ -52,20 +52,22 @@ JWT_REFRESH=30
 DJANGO_SETTINGS_MODULE=src.settings.dev
 SECRET_KEY=django-insecure-_l67gkupnfr_79_tmq&wro_s*o0kyzrhh%g+^vv@
 ```
-
-
 ### Getting started
+> WARNING
+> NO EJECUTAR LOS SIGUIENTES COMANDOS HASTA LA IMPLEMENTACION DE LOS USUARIOS
 ```bash
-poetry run manage.py makemigrations
+poetry shell
 ```
 ```bash
-poetry run manage.py migrate
+py manage.py migrate
 ```
 ```bash
-poetry run manage.py createsuperuser
+py manage.py createsuperuser
 ```
 ### Initializing project
-
 ```bash
-poetry run manage.py runserver
+poetry shell
+```
+```bash
+py manage.py runserver
 ```
