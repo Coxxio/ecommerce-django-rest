@@ -1,15 +1,13 @@
 [tool.poetry]
-name = "ecommerce-back-django"
+name = "ecommerce"
 version = "0.1.0"
 description = ""
 authors = ["Antonio Cortez <antoniocortez1497@gmail.com>"]
-license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-djongo = "^1.3.6"
-django = "4.1.13"
+django = "^4.1.13"
 djangorestframework = "^3.14.0"
 django-environ = "^0.11.2"
 django-cors-headers = "^4.3.1"
@@ -17,7 +15,14 @@ gunicorn = "^21.2.0"
 whitenoise = "^6.6.0"
 django-safedelete = "^1.3.3"
 djangorestframework-simplejwt = "^5.3.1"
+djongo = "^1.3.6"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest-drf = "^1.1.3"
+pytest-django = "^4.8.0"
+faker = "^23.1.0"
+autopep8 = "^2.0.4"
 
 [build-system]
 requires = ["poetry-core"]
